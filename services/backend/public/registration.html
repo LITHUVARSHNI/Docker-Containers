@@ -1,0 +1,43 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Registration Page</h1>
+        <form id="registration-form" onsubmit="submitForm(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Display success message -->
+        <div id="success-message" style="display:none;">
+            <p>Submitted successfully! Thank you for registering.</p>
+        </div>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the default form submission
+            showSuccessMessage();
+        }
+
+        function showSuccessMessage() {
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

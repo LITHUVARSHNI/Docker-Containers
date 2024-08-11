@@ -1,0 +1,15 @@
+
+{
+    "name": "ambassador",
+    "version": "1.0.0",
+    "description": "Ambassador service for Registration3",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "http-proxy": "^1.18.1"
+    }
+  }
+  
